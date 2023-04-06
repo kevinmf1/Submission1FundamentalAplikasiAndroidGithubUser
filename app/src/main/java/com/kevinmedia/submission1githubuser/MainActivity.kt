@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val TAG = "MainActivity"
-        const val APICode = "token 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"
+        const val APICode = "token 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"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
