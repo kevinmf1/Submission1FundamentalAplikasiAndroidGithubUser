@@ -1,5 +1,5 @@
 # Submission1FundamentalAplikasiAndroidGithubUser
-Ini adalah submission pertama dari Seri [Belajar Fundamental Aplikasi Android di Dicoding](https://www.dicoding.com/academies/14).
+Ini adalah submission pertama dari Seri [Belajar Fundamental Aplikasi Android](https://www.dicoding.com/academies/14) di Dicoding.
 
 Aplikasi ini dibuat untuk memenuhi tugas Belajar Fundamental Aplikasi Android karena saya mengikuti program [Bangkit Academy 2023](https://bangkit.academy).
 Project ini mendapatkan :star::star::star::star::star: dari reviewer.
