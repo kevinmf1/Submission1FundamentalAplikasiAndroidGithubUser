@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="128dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/alvaro_negredo_photostream"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Kevin Malik Fajar"
+            android:textColor="@color/color_detail"
+            app:layout_constraintStart_toEndOf="@+id/img_avatar"
+            app:layout_constraintTop_toTopOf="@+id/img_avatar" />
+
+        <TextView
+            android:id="@+id/countRepoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="35"
+            android:textColor="@color/purple"
+            app:layout_constraintBottom_toTopOf="@+id/repoView"
+            app:layout_constraintEnd_toEndOf="@+id/repoView"
+            app:layout_constraintStart_toStartOf="@+id/repoView" />
+
+        <TextView
+            android:id="@+id/countFollowersView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="38"
+            android:textColor="@color/purple"
+            app:layout_constraintBottom_toTopOf="@+id/FollowersView"
+            app:layout_constraintEnd_toEndOf="@+id/FollowersView"
+            app:layout_constraintStart_toStartOf="@+id/FollowersView" />
+
+        <TextView
+            android:id="@+id/countFollowingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="30"
+            android:textColor="@color/purple"
+            app:layout_constraintBottom_toTopOf="@+id/FollowingsView"
+            app:layout_constraintEnd_toEndOf="@+id/FollowingsView"
+            app:layout_constraintStart_toStartOf="@+id/FollowingsView" />
+
+        <TextView
+            android:id="@+id/repoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Repository"
+            android:textColor="@color/color_detail"
+            app:layout_constraintStart_toStartOf="@+id/nameView"
+            app:layout_constraintTop_toBottomOf="@+id/nameView" />
+
+        <TextView
+            android:id="@+id/FollowersView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Followers"
+            android:textColor="@color/color_detail"
+            app:layout_constraintBottom_toBottomOf="@+id/repoView"
+            app:layout_constraintStart_toEndOf="@+id/repoView" />
+
+        <TextView
+            android:id="@+id/FollowingsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Followings"
+            android:textColor="@color/color_detail"
+            app:layout_constraintBottom_toBottomOf="@+id/FollowersView"
+            app:layout_constraintStart_toEndOf="@+id/FollowersView" />
+
+        <TextView
+            android:id="@+id/urlUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://github.com/kevinmf1"
+            android:textColor="#32789E"
+            app:layout_constraintBottom_toBottomOf="@+id/img_avatar"
+            app:layout_constraintStart_toStartOf="@+id/repoView" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/urlUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/purple"
+        app:tabSelectedTextColor="@color/turquoise"
+        app:tabTextColor="@android:color/white"
+        app:tabIndicatorColor="#FF4E00"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="@+id/tabs"
+        app:layout_constraintStart_toStartOf="@+id/tabs"
+        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+</LinearLayout>

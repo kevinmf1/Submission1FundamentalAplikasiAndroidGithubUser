@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_tab_home">Welcome Home</string>
+    <string name="content_tab_profile">Change your Profile here</string>
+
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Followings</string>
+    <string name="tab_text_3">Setting</string>
+
+    <string name="followingNone">Tidak ada Followings</string>
+    <string name="followerNone">Tidak ada Followers</string>
+    <string name="userNone">Tidak ada akun dengan user tersebut, silahkan cari lagi..</string>
+</resources>
